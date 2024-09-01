@@ -4,72 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSS Assignment#1</title>
-<style>
-    #top {
-        background-color: #04AA6D;
-        color: white;
-    }
-    #list {
-        
-    }
-    #middle {
-
-    }
-    #side {
-        background-color: #32a4e7;
-        color: white;
-    }
-    #bottom {
-        background-color: #f1f1f1;
-        border: 1px solid #d4d4d4;
-        font-size: 70%;
-        padding: 10px;
-        text-align: center;
-    }
-    a {
-        color: black;
-    }
-    button {
-        width: 150px;
-        height: 25px;
-        text-align: left;
-    }
-</style>
+    <style>
+        body {
+            font: 100% Verdana;
+            line-height: 26px;
+            margin: 20px;
+        }
+        #menu {
+            margin-top: 40px;
+        }
+        #main {
+            
+        }
+        #sidebar {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding-left: 10px;
+        }
+        #bottom {
+            font-size: 70%;
+            text-align: center;
+            line-height: 14px;
+            padding: 10px;
+        }
+        button {
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            width: 165px;
+            height: 30px;
+            border: none;
+            font-size: 110%;
+        }
+        .green {
+            color: #4CAF50;
+        }
+        .black {
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <div id="top">
-        <h1>Welcome to 민경빈's Homepage (22300265)</h1>
-        Use the menu to select different Stylesheets
+    <div id="header">
+        <h1 class="green">Welcome to 민경빈's Homepage (22300265)</h1>
+        <p>Use the menu to select different Stylesheets</p>
     </div>
-
-    <div id="list">
-        <button onclick="">Stylesheet 1</button><br>
-        <button onclick="">Stylesheet 2</button><br>
-        <button onclick="">Stylesheet 3</button><br>
-        <button onclick="">Stylesheet 4</button><br>
-        <button onclick="">No Stylesheet</button><br>
+    <div id="menu">
+        <a href="./style1.html"><button style="background-color: #4CAF50;">Stylesheet 1</button></a>
+        <a href="./style2.html"><button>Stylesheet 2</button></a>
+        <a href=""><button>Stylesheet 3</button></a>
+        <a href=""><button>Stylesheet 4</button></a>
+        <a href="./nostyle.html"><button>No Stylesheet</button></a>
     </div>
-
-    <div id="middle">
-        <h1>Same Page Different Stylesheets</h1>
-        This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-        <a href="./style1.html">Stylesheet1</a>,
-        <a href="./style2.html">Stylesheet2</a>,
-        <a href="">Stylesheet3</a>,
-        <a href="">Stylesheet4</a>.
-        
-        <h2>No Styles</h2>
-        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
-        <a href="./nostyle.html">No Stylesheet</a>.
+    <div id="main">
+        <h1 class="green">Same Page Different Stylesheets</h1>
+        <p>
+            This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+            <a href="style1.html" class="black">Stylesheet1</a>,
+            <a href="style2.html" class="black">Stylesheet2</a>,
+            <a href="style3.html" class="black">Stylesheet3</a>,
+            <a href="style4.html" class="black">Stylesheet4</a>.
+        </p>
+        <h2 class="green">No Styles</h2>
+        <p>
+            This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+            <a href="nostyle.html" class="black">No Stylesheet</a>.
+        </p>
     </div>
-    
-    <div id="side">
-        <h3>Side-Bar</h3>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br>
+    <div id="sidebar">
+        <h3 class="green">Side-Bar</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
     </div>
-    <br>
     <div id="bottom">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<br>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
     </div>
 </body>
 </html>
